@@ -1,3 +1,5 @@
+from sys import thread_info
+
 print(r'''
 *******************************************************************************
           |                   |                  |                     |
@@ -22,3 +24,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
+first_choice = input("You're at a cross road. Where do you want to go?\n Type 'left or 'right' ")
+if first_choice == 'left':
+    second_choice = input("Choose between 'swim' or 'wait'. ")
+    if second_choice == 'wait':
+        third_choice = input("Which door do you want: 'red', 'blue', or 'yellow'? ")
+        if third_choice == 'red':
+            print("Burned by fire. Game Over")
+        elif third_choice == 'blue':
+            print("Eaten by beasts. Game Over")
+        elif third_choice == 'yellow':
+            print("You Win!")
+        else:
+            print("Game Over")
+    else:
+        print("Attacked by trout. Game Over")
+else:
+    print("Fall into a hole. Game Over")
