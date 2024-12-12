@@ -6,4 +6,10 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
                      "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma",
                      "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
-print(states_of_america)
+print(states_of_america[45])
+
+presidents = ["Donald Trump", "George Washington", "Abraham Lincoln"]
+
+list_of_lists = [states_of_america, presidents]
+
+print(list_of_lists)
